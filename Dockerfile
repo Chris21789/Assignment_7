@@ -1,4 +1,4 @@
-FROM openjdk:8
-ADD target/assignment-7.jar assignment-7.jar
-ENTRYPOINT ["java", "-jar","assignment-7.jar"]
+FROM openjdk
+ADD target/*.jar /
+ENTRYPOINT ["java", "-jar","/Assignment_7-1.0-SNAPSHOT.jar"]
 EXPOSE 8080
